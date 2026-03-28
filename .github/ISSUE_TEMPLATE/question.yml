@@ -1,0 +1,31 @@
+name: 问题咨询
+description: 提出使用相关的问题
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        有使用上的疑问？请在这里描述你的问题。
+        如果是 Bug 报告，请使用 Bug 模板。
+
+  - type: textarea
+    id: question
+    attributes:
+      label: 问题描述
+      description: 详细描述你的问题或疑惑。
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 相关代码 / 配置
+      description: 如有相关代码片段或配置，请附上。
+      render: python
+
+  - type: input
+    id: version
+    attributes:
+      label: pigeon-ui 版本
+      placeholder: "0.1.0"

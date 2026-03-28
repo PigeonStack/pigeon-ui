@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+*.whl
+*.tar.gz
+MANIFEST
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Qt / QML
+*.qmlc
+*.jsc
+qmlcache/
+
+# AI model files (Level 2 screen automation)
+data/models/*.onnx
+data/models/*.pt
+data/models/*.pth
+
+# Internal planning & AI agent automation
+OPEN_SOURCE_ROADMAP.md
+.github/agents/
+.github/skills/
+.github/hooks/
+.github/prompts/

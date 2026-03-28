@@ -1,0 +1,86 @@
+[project]
+name = "pigeon-ui"
+version = "0.1.0"
+description = "A PySide6 + QML reusable UI component library"
+requires-python = ">=3.11"
+dependencies = ["PySide6>=6.7"]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.9",
+    "mypy>=1.14",
+    "pre-commit>=4.0",
+    "pytest>=8.0",
+    "pytest-cov>=6.0",
+    "hatch>=1.14",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pigeon_ui"]
+
+# ---------- Ruff ----------
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src", "tests", "examples"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "SIM", # flake8-simplify
+    "RUF", # ruff-specific
+]
+ignore = [
+    "E501",    # line too long (handled by formatter)
+    "RUF002",  # ambiguous unicode in docstring (中文项目正常)
+    "RUF003",  # ambiguous unicode in comment (中文项目正常)
+    "RUF012",  # mutable class attr without ClassVar (ctypes._fields_ 标准写法)
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["pigeon_ui"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+# ---------- Mypy ----------
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false          # 渐进式类型检查
+ignore_missing_imports = true          # PySide6 stubs 不完整
+
+# ---------- Pytest ----------
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "regression: regression tests for previously fixed bugs",
+]
+
+# ---------- Coverage ----------
+[tool.coverage.run]
+source = ["pigeon_ui"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+fail_under = 60
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.",
+    "if sys.platform != .win32.",
+    "if TYPE_CHECKING:",
+]

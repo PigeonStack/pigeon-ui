@@ -1,0 +1,37 @@
+module PigeonUI
+singleton PTheme 1.0 PTheme.qml
+PWindow 1.0 PWindow.qml
+PButton 1.0 PButton.qml
+PNavBar 1.0 PNavBar.qml
+PIcon 1.0 PIcon.qml
+PInput 1.0 PInput.qml
+PSwitch 1.0 PSwitch.qml
+PCard 1.0 PCard.qml
+PProgressBar 1.0 PProgressBar.qml
+PBadge 1.0 PBadge.qml
+PTooltip 1.0 PTooltip.qml
+PIconButton 1.0 PIconButton.qml
+PDialog 1.0 PDialog.qml
+PTabBar 1.0 PTabBar.qml
+PDivider 1.0 PDivider.qml
+PTag 1.0 PTag.qml
+PCheckbox 1.0 PCheckbox.qml
+PRadio 1.0 PRadio.qml
+PTextarea 1.0 PTextarea.qml
+PToast 1.0 PToast.qml
+PSnackbar 1.0 PSnackbar.qml
+PBanner 1.0 PBanner.qml
+PMenu 1.0 PMenu.qml
+PContextMenu 1.0 PContextMenu.qml
+PDrawer 1.0 PDrawer.qml
+PSelect 1.0 PSelect.qml
+PList 1.0 PList.qml
+PTable 1.0 PTable.qml
+PStack 1.0 PStack.qml
+PGrid 1.0 PGrid.qml
+PSlider 1.0 PSlider.qml
+PAvatar 1.0 PAvatar.qml
+PSpinner 1.0 PSpinner.qml
+PPagination 1.0 PPagination.qml
+PBreadcrumb 1.0 PBreadcrumb.qml
+PScrollBar 1.0 PScrollBar.qml
