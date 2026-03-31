@@ -4,11 +4,12 @@
 
 ```
 docs/
-├── components/     # 各组件 API 文档
-├── theme/          # 主题系统规范
-├── migration/      # 版本迁移说明
-├── adr/            # 架构决策记录（ADR）
-├── i18n.md         # 国际化（i18n）与 RTL 指南
+├── components/          # 各组件 API 文档
+├── theme/               # 主题系统规范
+├── migration/           # 版本迁移说明
+├── adr/                 # 架构决策记录（ADR）
+├── development-workflow.md  # 开发工作流程（日常开发 / 发布 / CI）
+├── i18n.md              # 国际化（i18n）与 RTL 指南
 └── overlay-strategy.md  # 叠层定位与焦点管理策略
 ```
 

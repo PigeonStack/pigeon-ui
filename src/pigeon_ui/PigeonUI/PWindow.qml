@@ -256,7 +256,7 @@ Window {
             // 右侧分割线
             Rectangle {
                 anchors.right: parent.right
-                width: 1
+                width: PTheme.borderWidth
                 height: parent.height
                 color: PTheme.colorDivider
                 visible: root.showSidebar

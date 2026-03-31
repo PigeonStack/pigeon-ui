@@ -75,7 +75,7 @@ Item {
         opacity: _p.opened ? 1 : 0
 
         Behavior on opacity {
-            NumberAnimation { duration: PTheme.animFast }
+            NumberAnimation { duration: PTheme.animFast; easing.type: Easing.OutCubic }
         }
 
         MouseArea {
@@ -111,6 +111,7 @@ Item {
             NumberAnimation {
                 id: _cardFadeAnim
                 duration: PTheme.animFast
+                easing.type: Easing.OutCubic
             }
         }
 

@@ -1,5 +1,10 @@
 # PigeonUI
 
+[![PyPI version](https://img.shields.io/pypi/v/pigeon-ui)](https://pypi.org/project/pigeon-ui/)
+[![CI](https://github.com/aspect-ui/pigeon-ui/actions/workflows/ci.yml/badge.svg)](https://github.com/aspect-ui/pigeon-ui/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/pypi/pyversions/pigeon-ui)](https://pypi.org/project/pigeon-ui/)
+
 一致设计语言驱动的 **PySide6 + QML** 桌面组件库。
 
 > Windows 平台 · MIT 许可 · PTheme 主题系统统一驱动

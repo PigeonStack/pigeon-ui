@@ -80,7 +80,7 @@ T.Slider {
             NumberAnimation { duration: PTheme.animFast; easing.type: Easing.OutCubic }
         }
         Behavior on border.width {
-            NumberAnimation { duration: PTheme.animFast }
+            NumberAnimation { duration: PTheme.animFast; easing.type: Easing.OutCubic }
         }
 
         // ── 焦点环 ──

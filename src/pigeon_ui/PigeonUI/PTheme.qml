@@ -88,6 +88,7 @@ QtObject {
                                                         : Qt.rgba(colorAccent.r, colorAccent.g, colorAccent.b, 0.5)
 
     // ── 间距 ──
+    readonly property int spacingXxs: 2
     readonly property int spacingXs:  4
     readonly property int spacingSm:  8
     readonly property int spacingMd:  16
@@ -117,6 +118,7 @@ QtObject {
     readonly property int spinnerSizeSm:  16
     readonly property int spinnerSizeMd:  24
     readonly property int spinnerSizeLg:  36
+    readonly property int spinnerDuration: 900
 
     // ── Pagination ──
     readonly property int paginationItemSize:  32

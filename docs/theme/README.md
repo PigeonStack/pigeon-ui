@@ -41,10 +41,11 @@ Rectangle {
 - `radiusSm` / `radiusMd` / `radiusLg`
 
 ### 间距
-- `spacingSm` / `spacingMd` / `spacingLg`
+- `spacingXxs`（2）/ `spacingXs`（4）/ `spacingSm`（8）/ `spacingMd`（16）/ `spacingLg`（24）/ `spacingXl`（32）
 
 ### 动画
 - `animFast`（150ms）/ `animNormal`（300ms）/ `animSlow`（500ms）
+- `spinnerDuration`（900ms）— Spinner 旋转动画时长
 
 ## Dark / Light 模式
 

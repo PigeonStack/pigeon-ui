@@ -83,7 +83,7 @@ Item {
 
                 Column {
                     anchors.verticalCenter: parent.verticalCenter
-                    spacing: 1
+                    spacing: PTheme.spacingXxs
 
                     Text {
                         text: _delegate.itemText
@@ -112,7 +112,7 @@ Item {
                 anchors.right: parent.right
                 anchors.leftMargin: PTheme.spacingSm
                 anchors.rightMargin: PTheme.spacingSm
-                height: 1
+                height: PTheme.borderWidth
                 color: PTheme.colorDivider
             }
 

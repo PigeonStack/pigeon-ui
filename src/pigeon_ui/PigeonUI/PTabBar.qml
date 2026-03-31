@@ -33,7 +33,7 @@ Item {
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: parent.bottom
-        height: 1
+        height: PTheme.borderWidth
         color: PTheme.colorDivider
     }
 
@@ -43,7 +43,7 @@ Item {
         height: PTheme.tabIndicatorHeight
         anchors.bottom: parent.bottom
         color: root.accentColor
-        radius: 1
+        radius: height / 2
 
         // 动态定位
         property var _target: _repeater.count > 0 && root.currentIndex >= 0

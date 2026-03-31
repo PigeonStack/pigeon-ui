@@ -39,9 +39,9 @@ T.ToolTip {
 
     // ── 动画 ──
     enter: Transition {
-        NumberAnimation { property: "opacity"; from: 0.0; to: 1.0; duration: PTheme.animFast }
+        NumberAnimation { property: "opacity"; from: 0.0; to: 1.0; duration: PTheme.animFast; easing.type: Easing.OutCubic }
     }
     exit: Transition {
-        NumberAnimation { property: "opacity"; from: 1.0; to: 0.0; duration: PTheme.animFast }
+        NumberAnimation { property: "opacity"; from: 1.0; to: 0.0; duration: PTheme.animFast; easing.type: Easing.OutCubic }
     }
 }

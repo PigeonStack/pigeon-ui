@@ -58,7 +58,7 @@ Item {
                 duration: root.sweepDuration
                 easing.type: Easing.InOutQuad
             }
-            PauseAnimation { duration: 200 }
+            PauseAnimation { duration: PTheme.animFast }
         }
     }
 

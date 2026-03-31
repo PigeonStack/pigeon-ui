@@ -73,7 +73,7 @@ Item {
                     // 右侧分割线
                     Rectangle {
                         anchors.right: parent.right
-                        width: 1
+                        width: PTheme.borderWidth
                         height: parent.height
                         color: PTheme.colorDivider
                         visible: index < root.columns.length - 1
@@ -96,14 +96,14 @@ Item {
         Rectangle {
             anchors.top: _header.bottom
             width: parent.width
-            height: 1
+            height: PTheme.borderWidth
             color: PTheme.colorBorder
         }
 
         // ── 数据行 ──
         Flickable {
             anchors.top: _header.bottom
-            anchors.topMargin: 1
+            anchors.topMargin: PTheme.borderWidth
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.bottom: parent.bottom
@@ -176,7 +176,7 @@ Item {
                         Rectangle {
                             anchors.bottom: parent.bottom
                             width: parent.width
-                            height: 1
+                            height: PTheme.borderWidth
                             color: PTheme.colorDivider
                             visible: _rowDelegate.index < root.rows.length - 1
                         }

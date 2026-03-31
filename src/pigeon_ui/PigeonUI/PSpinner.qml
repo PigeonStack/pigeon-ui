@@ -48,7 +48,7 @@ Item {
         NumberAnimation on _angle {
             from: 0
             to: Math.PI * 2
-            duration: 900
+            duration: PTheme.spinnerDuration
             loops: Animation.Infinite
             running: root.running && root.visible
         }

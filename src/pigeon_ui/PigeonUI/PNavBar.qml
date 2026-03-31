@@ -266,7 +266,7 @@ Item {
                             }
                         }
                         Behavior on opacity {
-                            NumberAnimation { duration: PTheme.animFast }
+                            NumberAnimation { duration: PTheme.animFast; easing.type: Easing.OutCubic }
                         }
                         Behavior on color {
                             ColorAnimation { duration: PTheme.animFast }
@@ -291,7 +291,7 @@ Item {
         anchors.right: parent.right
         anchors.bottom: _bottomContainer.top
         anchors.bottomMargin: PTheme.spacingXs
-        height: 1
+        height: PTheme.borderWidth
         color: PTheme.colorDivider
     }
 
@@ -437,7 +437,7 @@ Item {
                             }
                         }
                         Behavior on opacity {
-                            NumberAnimation { duration: PTheme.animFast }
+                            NumberAnimation { duration: PTheme.animFast; easing.type: Easing.OutCubic }
                         }
                         Behavior on color {
                             ColorAnimation { duration: PTheme.animFast }
@@ -462,7 +462,7 @@ Item {
         anchors.right: parent.right
         anchors.bottom: _collapseBtn.top
         anchors.bottomMargin: PTheme.spacingXs
-        height: 1
+        height: PTheme.borderWidth
         color: PTheme.colorDivider
     }
 

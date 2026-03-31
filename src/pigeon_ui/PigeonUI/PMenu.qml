@@ -72,6 +72,7 @@ Item {
             NumberAnimation {
                 id: _fadeAnim
                 duration: PTheme.animFast
+                easing.type: Easing.OutCubic
             }
         }
 

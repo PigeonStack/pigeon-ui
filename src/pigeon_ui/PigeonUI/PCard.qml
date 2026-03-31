@@ -38,7 +38,7 @@ Rectangle {
         Column {
             id: _header
             width: parent.width
-            spacing: 2
+            spacing: PTheme.spacingXxs
             visible: root.headerVisible
 
             Text {
@@ -61,7 +61,7 @@ Rectangle {
         // ── 分割线 ──
         Rectangle {
             width: parent.width
-            height: 1
+            height: PTheme.borderWidth
             color: PTheme.colorDivider
             visible: root.headerVisible && _contentArea.children.length > 0
         }
@@ -76,7 +76,7 @@ Rectangle {
         // ── 底部分割线 ──
         Rectangle {
             width: parent.width
-            height: 1
+            height: PTheme.borderWidth
             color: PTheme.colorDivider
             visible: root.footerVisible
         }
